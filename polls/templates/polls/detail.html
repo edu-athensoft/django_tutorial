@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 
 <!--
+=======
+>>>>>>> e00851f4d4c91a380696df66f81856db26ec8576
 <h1>{{ question.question_text }}</h1>
 <ul>
 {% for choice in question.choice_set.all %}
@@ -7,9 +10,13 @@
 {% endfor %}
 </ul>
 
+<<<<<<< HEAD
 
 <hr/>-->
 
+=======
+<hr/>
+>>>>>>> e00851f4d4c91a380696df66f81856db26ec8576
 
 <h1>{{ question.question_text }}</h1>
 
@@ -22,6 +29,10 @@
     <label for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label><br>
 {% endfor %}
 <input type="submit" value="Vote">
+<<<<<<< HEAD
 </form>
 
 <a href="{% url 'polls:index' %}">back to question list</a>
+=======
+</form>
+>>>>>>> e00851f4d4c91a380696df66f81856db26ec8576

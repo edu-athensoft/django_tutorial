@@ -1,4 +1,12 @@
+<<<<<<< HEAD
 from django.db import models
+=======
+import datetime
+
+from django.db import models
+from django.utils import timezone
+
+>>>>>>> e00851f4d4c91a380696df66f81856db26ec8576
 
 # Create your models here.
 class Question(models.Model):
@@ -7,12 +15,19 @@ class Question(models.Model):
 
     def __str__(self):
         return self.question_text
+<<<<<<< HEAD
 
     def was_published_recently(self):
         return self.pub_date >= timezone.now() - datetime.timedelta(days=1)
 
 
 
+=======
+    
+    def was_published_recently(self):
+        return self.pub_date >= timezone.now() - datetime.timedelta(days=1)
+
+>>>>>>> e00851f4d4c91a380696df66f81856db26ec8576
 class Choice(models.Model):
     question = models.ForeignKey(Question, on_delete=models.CASCADE)
     choice_text = models.CharField(max_length=200)
