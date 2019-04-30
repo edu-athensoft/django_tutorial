@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'static/style.css' %}">
+</head>
+
+<body>
+    <div>
+        Welcome to mysite, please sign in
+    </div>
+
+    <div>
+        <form action="" method="post">
+            <input type="text" id="userName" name="userName" value="" placeholder="input your username"/>
+            <input type="text" id="userPassword" name="userPassword" value="" placeholder="input your password"/>
+            <input type="submit" value="Sign in"/>
+        </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Account List</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'login/style.css' %}">
+</head>
+
+<body>
+{% if user_account_list %}
+    <ul>
+    {% for user_account in user_account_list %}
+        
+        <li><a href="{% url 'login:detail' user_account.id %}">{{ user_account.user_name }}</a></li>
+
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No users are available.</p>
+
+{% endif %}
+
+</body>
+</html>
