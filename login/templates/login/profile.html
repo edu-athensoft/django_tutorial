@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Profile</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'login/style.css' %}">
+</head>
+
+<body>
+
+<h2>Welcome {{input_username}}</h2>
+<hr/>
+<p>Your profile is</p>
+{{input_username}} <br/>
+{{input_userpassword}}
+
+
+
+</body>
+</html>

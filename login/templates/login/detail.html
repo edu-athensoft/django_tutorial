@@ -1,1 +1,13 @@
 view: detail of user account
+
+<h1>User Account Detail</h1>
+
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+{% csrf_token %}
+
+    User Name: {{user_account.user_name}}<br/>
+    User Password: {{user_account.user_password}}<br/>
+
+
+<a href="{% url 'login:lists' %}">back to user list</a>
