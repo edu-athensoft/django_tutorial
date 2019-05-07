@@ -7,16 +7,35 @@
 </head>
 
 <body>
-    <div>
-        Welcome to mysite, please sign in
+    <div id="top">
+        &nbsp; 
     </div>
 
-    <div>
+    <div id="head">
+        Welcome to My Website
+    </div>
+
+    <div id="loginform">
         <form action="{% url 'login:profile' %}" method="POST">
             {% csrf_token %}
-            <input type="text" id="userName" name="userName" value="" placeholder="input your username"/>
-            <input type="text" id="userPassword" name="userPassword" value="" placeholder="input your password"/>
-            <input type="submit" value="Sign in"/>
+            <table>
+                <tr>
+                    <td>Username&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td><input type="text" id="userName" name="userName" value="" placeholder=""/></td>
+                </tr>
+                <tr>
+                    <td>Password&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td><input type="text" id="userPassword" name="userPassword" value="" placeholder=""/></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <br/>
+                        <input type="submit" value="Sign in" id="btn_signin"/>
+                    </td>
+                </tr>
+            </table>  
+            
         </form>
     </div>
 

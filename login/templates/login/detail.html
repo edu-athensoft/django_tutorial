@@ -1,5 +1,10 @@
-view: detail of user account
-
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Account Detail</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'login/style.css' %}">
+</head>
 <h1>User Account Detail</h1>
 
 {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
