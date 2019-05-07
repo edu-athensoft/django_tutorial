@@ -104,6 +104,8 @@ venv.bak/
 .mypy_cache/
 
 # Django project
-*/__pycache__/
+mysite/__pycache__/
+polls/__pycache__/
+login/__pycache__/
 
 db.sqlite3
